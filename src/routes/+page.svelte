@@ -6,18 +6,20 @@
     }
 </script>
 
-<div class="bg-pink-300 m-4 text-2xl font-bold">
+<div class="bg-pink-300 m-8 text-2xl font-bold">
     <h2 class="p-4 text-center ">Laila's corner of the internet</h2>
 </div>
 {#each loremIpsumArray as p}
-    <p class="m-8 opacity-100">{p}</p>
+<div class="m-8 bg-repeat bg-contain shadow" style="background-image: url('./images/backgrounds/note-background.png'">
+    <p class="p-8 opacity-100">{p}</p>
+</div>
 {/each}
 
 <style lang="postcss">
     :global(body) {
         font-family: Capriola;
         margin: 0;
-        background-image: url("./images/background/pink clouds.jpg");
+        background-image: url('./images/backgrounds/page-background.jpg');
         background-size: cover;
         backdrop-filter: blur(2rem);
     }
