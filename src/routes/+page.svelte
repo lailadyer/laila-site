@@ -6,11 +6,11 @@
     }
 </script>
 
-<div class="bg-pink-300">
-    <h2 class="m-3 text-center">Laila's corner of the internet</h2>
+<div class="bg-pink-300 m-4 text-2xl font-bold">
+    <h2 class="p-4 text-center ">Laila's corner of the internet</h2>
 </div>
 {#each loremIpsumArray as p}
-    <p class="mt-0 mb-4 opacity-0">{p}</p>
+    <p class="m-8 opacity-100">{p}</p>
 {/each}
 
 <style lang="postcss">
@@ -19,6 +19,6 @@
         margin: 0;
         background-image: url("./images/background/pink clouds.jpg");
         background-size: cover;
-        backdrop-filter: blur(2em);
+        backdrop-filter: blur(2rem);
     }
 </style>
