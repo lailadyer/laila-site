@@ -11,7 +11,7 @@
 </div>
 <div class="flex flex-row flex-wrap justify-center">
     {#each loremIpsumArray as p}
-        <div class="m-8 bg-blend-luminosity bg-pink-300 shadow-md max-w-lg bg-contain rounded-xl bg-repeat bg-[url('$lib/images/backgrounds/note-background.jpg')]">
+        <div class="m-8 bg-blend-luminosity border-8 border-white bg-pink-300 shadow-md max-w-lg bg-contain rounded-xl ">
             <p class="p-8 text-shadow shadow-pink-200">{p}</p>
         </div>
     {/each}
