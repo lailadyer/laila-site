@@ -1,28 +1,25 @@
 <script lang="ts">
-    const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-    let loremIpsumArray: string[] = [];
-    for (let index = 0; index < 40; index++) {
-        loremIpsumArray.push(loremIpsum);
-    }
-</script>
+	import PixiJs from "$lib/PixiJs.svelte";
 
-<div class="bg-pink-300 m-8 text-2xl font-bold rounded-lg">
-    <h2 class="p-4 text-center text-shadow shadow-pink-200">Laila's corner of the internet</h2>
-</div>
-<div class="flex flex-row flex-wrap justify-center">
-    {#each loremIpsumArray as p}
-        <div class="m-8 bg-blend-luminosity border-8 border-white bg-pink-300 shadow-md max-w-lg bg-contain rounded-xl ">
-            <p class="p-8 text-shadow shadow-pink-200">{p}</p>
+    
+</script>
+<div class="bg-gradient-to-br from-pink-100 to-pink-300 min-h-screen m-0 p-0">
+    <div class="p-4">
+        <h2 class="bg-pink-200 p-4 text-center text-2xl border-8 border-white rounded-lg">Laila's corner of the internet</h2>
+    </div>
+    <div class="flex flex-row justify-center">
+        <div class="m-8 border-8 border-white bg-pink-200 shadow-md rounded-xl">
+            <p class="p-8">Let's try out some PixiJs on the right here -></p>
         </div>
-    {/each}
+        <div class="m-8 border-8 border-white bg-pink-200 shadow-md rounded-xl flex-grow">
+            <PixiJs />
+        </div>
+    </div>
 </div>
 
 <style>
     :global(body) {
         font-family: Capriola;
         margin: 0;
-        background-image: url($lib/images/backgrounds/page-background.jpg);
-        background-size: cover;
-        backdrop-filter: blur(2rem);
     }
 </style>
