@@ -14,7 +14,7 @@ onMount(() => {
     const stage = app.stage;
 
     const rect = Sprite.from(Texture.WHITE);
-    rect.tint = 0xdddddd;
+    rect.tint = 0x000000;
     rect.width = 200;
     rect.height = 200;
     // rect.eventMode = "auto";
